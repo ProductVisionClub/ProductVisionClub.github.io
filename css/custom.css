@@ -1,0 +1,15 @@
+#home{
+	background: url("../images/header-pink.PNG");
+}
+
+#logo{
+	height: 200px;
+}
+
+
+.subtitle{
+	text-align: left;
+}
+.home-logo-text a{
+	border: 0;
+}
