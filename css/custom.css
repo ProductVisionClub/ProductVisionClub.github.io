@@ -1,3 +1,5 @@
+/* Landing Page */
+
 #home{
 	background: url("../images/header-pink.png");
 }
@@ -6,10 +8,49 @@
 	height: 200px;
 }
 
+.home-logo-text a{
+	border: 3px solid;
+}
+
+/* Our Vision */
 
 .subtitle{
-	text-align: left;
+	text-align: center;
+	margin-top: 45px;
 }
-.home-logo-text a{
-	border: 0;
+
+/* Our Team */
+
+.highlight.execs {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* Contact Box */
+
+.contact-box {
+	margin-top: -25px;
+}
+
+/* PVC logo */
+
+.logo {
+	display: inline-block;
+}
+
+.pvc {
+	margin-top: -5px;
+	height: 90px;
+	width: 90px;
+	margin-left: -30px;
+}
+
+/* Clients */
+.client-logos {
+	display: inline;
+}
+
+.client-logos.quora {
+	height: 10px;
+	width: 10px;
 }
