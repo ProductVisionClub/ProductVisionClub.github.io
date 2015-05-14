@@ -31,3 +31,26 @@
 .contact-box {
 	margin-top: -25px;
 }
+
+/* PVC logo */
+
+.logo {
+	display: inline-block;
+}
+
+.pvc {
+	margin-top: -5px;
+	height: 90px;
+	width: 90px;
+	margin-left: -30px;
+}
+
+/* Clients */
+.client-logos {
+	display: inline;
+}
+
+.client-logos.quora {
+	height: 10px;
+	width: 10px;
+}
