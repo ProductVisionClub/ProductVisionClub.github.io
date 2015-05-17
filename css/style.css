@@ -868,7 +868,7 @@ p.quote {
 	line-height: 1;
 	padding: 5px 25px 0;
 	border: 5px solid;
-	color: inherit;
+	color: black;
 }
 .home-logo-text.light a {
 	color: rgba(255,255,255,0.9);
