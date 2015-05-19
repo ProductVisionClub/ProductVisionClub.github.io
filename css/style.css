@@ -307,11 +307,11 @@ nav.transparent.scroll a {
 	color: #515A5F;
 }
 
-
 nav .container .four.columns {
 	float: left;
-	width: auto
+	width: auto;
 }
+
 nav .container .twelve.columns {
 	float: right;
 	width: auto
