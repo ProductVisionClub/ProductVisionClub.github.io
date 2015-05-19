@@ -69,7 +69,7 @@ h1 {
 }
  @media only screen and (max-width: 767px) {
 h1 {
-	font-size: 54px;
+	font-size: 36px;
 	line-height: 1;
 }
 
