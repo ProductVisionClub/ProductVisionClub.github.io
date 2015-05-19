@@ -62,3 +62,15 @@
 .close{
 	z-index: 2000;
 }
+
+/* Fun facts */
+.facts {
+	text-align: center;
+}
+
+
+/* companies */
+.companies {
+	text-align: center;
+}
+
