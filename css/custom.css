@@ -39,16 +39,26 @@
 }
 
 .pvc {
-	margin-top: -5px;
-	height: 90px;
-	width: 90px;
-	margin-left: -30px;
+	height: 80px;
+	width: 60px;
 }
+
+@media only screen and (max-width: 767px) {
+	.pvc {
+		margin-top: -3px;
+	}
+}
+
 
 /* Clients */
 
-.client-logos {
+.client-logos {`
 	display: inline;
+}
+
+.companies {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /* MailChimp */
@@ -72,5 +82,10 @@
 /* companies */
 .companies {
 	text-align: center;
+}
+
+/* Contact parallax */
+.email {
+	font-size: 450%;
 }
 
