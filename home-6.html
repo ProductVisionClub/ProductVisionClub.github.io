@@ -106,6 +106,8 @@
                   <li><a href="#events">Events</a></li>
                   <li><a href="#team">Team</a></li>
                   <li><a href="https://medium.com/@ProductVision" target="_blank">Blog</a></li>
+                  <li><a href="#parallax3">Testimonials</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
                   <!-- <li><a href="#portfolio">Portfolio</a></li>
                   <li><a href="shortcodes.html">Shortcodes</a></li>                  
                   <li><a href="blog.html">Blog</a></li>    -->               
@@ -264,10 +266,10 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
                 <!-- START service-box DESCIPTION --> 
                 <div class="service-description">
                    <!-- <p>Hear about product management (PM) internship experiences and lessons and learn how to prepare for interviews to land PM co-op or full-time placements</p> --><!-- END service-box DESCRIPTION -->
-                   <p>Hear about how it’s like to work as a PM/engineer in the industry. Interactive Q&A with our past speakers from top companies and successful start-ups.</p>
+                   <p>Hear about how it’s like to work as a PM/engineer in the industry. Interactive Q&A with our previous speakers from top companies and successful start-ups.</p>
                 </div> 
                 
-                    <h6>Past Speakers</h6>
+                    <h6>Previous Speakers</h6>
                   <ul class="styled-list">
                     <li>Quora: Ziyad Mir</li>
                     <li>Mozilla: Peter Dolanjski</li>
@@ -399,7 +401,7 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
     <div class="sixteen columns">
             
             <h3 class="companies">Here's our generous sponsors</h3>
-                <div class="client-logos">
+                <div class="client-logos sponsors">
                   <a href="http://www.yelp.com/" title="Featured Clients" class="clients" target="_blank"><img src="images\clients\yelp.png" width="150" height="100" alt="Clients"></a>
            <!--        <a href="#" title="Featured Clients" class="clients" target="_blank"><img src="#" width="150" alt="Clients"></a>
                   <a href="#" title="Featured Clients" class="clients" target="_blank"><img src="#" alt="Clients"></a>
@@ -466,7 +468,7 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
               <div id="project-navigation">
                   <ul>
                       <li id="nextProject"><a href="#"></a></li>
-                      <li id="prevProject"><a href="#"></a></li>
+                      <li id="prevProject"><a href="#" class="disabled"></a></li>
                    </ul>  
                </div>
                <!-- END PROJECT NAVIGATION --> 
@@ -518,18 +520,17 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
    <div id="portfolio-wrap">
     
     <!-- START PORTFOLIO ITEM -->                   
-    <div class="portfolio-item one-third column design videography photography web branding">
+    <div class="portfolio-item one-third column design videography photography web branding isotope-item current">
       <div class="angularstuff" ng-controller="MemberCtrl">
         <div ng-repeat="portfolio in portfolios">
            <div class="portfolio">
-              <a href="#!projects/project-{{$index+1}}.html" class="portfolio-image">
+              <a href="#/projects/project-{{$index+1}}.html" class="portfolio-image">
                 <img class="portfolioImage" ng-src="{{portfolio.imageURL}}" alt="Portfolio {{$index+1}}"/><!-- END PORTFOLIO IMAGE -->   
                 
                 <div class="portfolio-overlay">                
                     <div class="thumb-info">                
                       <h3>{{portfolio.header}}</h3><!-- OVERLAY TITLE -->  
                       <p class="portfolio-tags">{{portfolio.subheader}}</p><!-- END PORTFOLIO TAGS -->  
-                      <i class="icon-picture"></i><!-- OVERLAY ICON --> 
                     </div>                
                 </div><!-- END PORTFOLIO OVERLAY --> 
               
@@ -539,10 +540,8 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
       </div>
     </div>
   </div>
-    <!-- END PORTFOLIO ITEM -->    
+    <!-- END PORTFOLIO ITEM -->   
 
-
-  
   <!-- START TEAM SECTION --> 
   <div id="team" class="page">
     
@@ -767,7 +766,8 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
     {name:'Umesh Khanna', imageURL:"images/team/umesh.jpg",role:"Director of Tech Talks",program:"1B Electrical Engineering", email:"", LinkedIn:"", description:""}
     ];
     $scope.portfolios = [
-      {imageURL:"images/portfolio/portfolio9.jpg", header: "Featured Image", subheader: "Photography"}
+      {imageURL:"images/portfolio/portfolio9.jpg", header: "Featured Image", subheader: "Photography"},
+      {imageURL:"images/portfolio/portfolio8.jpg", header: "hi", subheader: "Hello"}
     ];
   }]);
   </script>
