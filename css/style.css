@@ -57,7 +57,7 @@ a, a:visited, a:hover {
 }
 body {
 	background: white;
-	font: 13px/1.5 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 13px/1.5 'Roboto Slab', serif;
 	font-weight: 300;
 	color: #515A5F;
 	-webkit-font-smoothing: antialiased;

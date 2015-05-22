@@ -13,9 +13,11 @@
     <meta name="keywords" content="Technology, CSS, Waterloo, Entrepeneurship"/>
     <meta name="author" content="Product Vision Club"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 	<!-- GOOGLE WEB FONTS INCLUDE -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,600' rel='stylesheet' type='text/css'>
   
 	
@@ -57,8 +59,10 @@
 	<!-- START HOME SECTION -->    
 	<div id="home" class="home-gradient home1">
       <div class="home-text-wrapper">
-      
           <div class="home-logo-text">
+            <div id="home-logo-logo">
+              <img id="header-logo" src="images/logoreal.PNG">
+            </div>
             <a href="#about">Product Vision Club</a>
           </div>
           
@@ -88,10 +92,11 @@
               </div>
               <!-- END LOGO -->			
           </div><!-- END FOUR COLUMNS -->   
-          
-          <div class="logo">
+          <!-- Start logo div -->
+         <!--  <div class="logo">
             <a href="#home"><img src="images/PVClogo.svg" class="pvc"/></a>
-          </div><!-- End logo div -->
+          </div> -->
+          <!-- End logo div -->
 
           <div class="twelve columns">            		
               <!-- START NAVIGATION MENU ITEMS -->
@@ -251,7 +256,7 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
         <div class="service-box">
                  <!-- START ICON -->
                    <div>
-                      <h3>Tech talks</h3><!-- END service-box TITLE -->
+                      <h3>Industry Tech talks</h3><!-- END service-box TITLE -->
                       <i class="service-icon icon-comments"></i>
                    </div>
                  <!-- END ICON -->  
@@ -358,7 +363,7 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
          </div>
          
          <div class="four columns">
-           <div class="milestone-counter" data-perc="23">
+           <div class="milestone-counter" data-perc="10">
              <span class="milestone-count highlight"></span>
              <h6 class="milestone-details">Featurered Visionaries</h6>
            </div>
@@ -395,13 +400,13 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
             
             <h3 class="companies">Here's our generous sponsors</h3>
                 <div class="client-logos">
-                  <a href="#" title="Featured Clients" class="clients" target="_blank"><img src="#" width="100" height="100" alt="Clients"></a>
-                  <a href="#" title="Featured Clients" class="clients" target="_blank"><img src="#" width="150" alt="Clients"></a>
+                  <a href="http://www.yelp.com/" title="Featured Clients" class="clients" target="_blank"><img src="images\clients\yelp-logo.JPG" width="100" height="100" alt="Clients"></a>
+           <!--        <a href="#" title="Featured Clients" class="clients" target="_blank"><img src="#" width="150" alt="Clients"></a>
                   <a href="#" title="Featured Clients" class="clients" target="_blank"><img src="#" alt="Clients"></a>
                   <a href="#" title="Featured Clients" class="clients" target="_blank"><img src="#" alt="Clients"></a>
                   <a href="#" title="Featured Clients" class="clients" target="_blank"><img src="#" alt="Clients"></a>
                   <a href="#" title="Featured Clients" class="clients" target="_blank"><img src="#" alt="Clients"></a>
-                  <a href="#" title="Featured Clients" class="clients" target="_blank"><img src="#" width="150" alt="Clients"></a>
+                  <a href="#" title="Featured Clients" class="clients" target="_blank"><img src="#" width="150" alt="Clients"></a> -->
                   <!--<a href="#" title="Featured Clients" class="clients"><img src="images/clients/client5.png" alt="Clients"></a> -->             
                 </div><!-- END CLIENTS LIST --> 
                 
@@ -443,7 +448,7 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
             <div class="angularstuff"  ng-app="myApp" ng-controller="MemberCtrl">
               <div ng-repeat="member in members" class="team-member">
                 <div class="team-thumb img-wrp">
-                    <img ng-src="{{member.imageURL}}" alt="team">   
+                    <img class="pvcteam" ng-src="{{member.imageURL}}" alt="team">   
                      <div class="team-overlay">
                         <div class="img-overlay"></div> 
                           <div class="overlay-content">                            
@@ -465,7 +470,7 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
                       </div> 
                       <div class="row">
                         <div class="seven columns">
-                          <img ng-src="{{member.imageURL}}" alt="team"> 
+                          <img class="pvcteam" ng-src="{{member.imageURL}}" alt="team"> 
                           <div class="member-details">                             
                                <div class="social-icons">
                                   <div class="social-icon social-email"><a href="mailto:hallo@example.com" target="_blank" data-original-title="Email">Email</a></div>
@@ -504,6 +509,7 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
   <!-- START CONTACT DETAILS -->
     <div class="contact-details">
       <h1 class="email">contact@productvisionclub.com</h1>
+      <h2>University of Waterloo</h2>
       <h2>200 University Ave W, Waterloo, ON, N2L 3G1, Canada</h2>
     </div>      
   <!-- END CONTACT DETAILS -->
@@ -610,26 +616,27 @@ founders from industry.  Our mission is to <span class="highlight">inspire stude
   //Question 1
   .controller('MemberCtrl',['$scope',function($scope){
     $scope.members = [
-    {name:'Sung Cheul Hong', imageURL:"images/team/sung.svg",role:"Founder",job:"Groupon: Associate Product Manager",program:"System Design Engineering 2015", email:"", LinkedIn:"", description:"Sung has done his first two co-ops at startups for developer positions. He then moved into business roles are BlackBerry and Manulife Financial. For his last two co-op terms, he has worked as an associate product manager where he is working full-time now"},
-    {name:'Noah Maccalum', imageURL:"images/team/noah.svg",role:"Co-Founder",job:"Microsoft: Product Manager",program:"Nanotechnology Engineering 2015", email:"", LinkedIn:"",
+    {name:'Sung Cheul Hong', imageURL:"images/team/sung.jpg",role:"Founder",job:"Groupon: Associate Product Manager",program:"System Design Engineering 2015", email:"", LinkedIn:"", description:"Sung has done his first two co-ops at startups for developer positions. He then moved into business roles are BlackBerry and Manulife Financial. For his last two co-op terms, he has worked as an associate product manager where he is working full-time now"},
+    {name:'Noah Maccalum', imageURL:"images/team/noah.jpg",role:"Co-Founder",job:"Microsoft: Product Manager",program:"Nanotechnology Engineering 2015", email:"", LinkedIn:"",
      description:"Noah has done numerous co-ops at established instiutions including MIT and Harvard. He also has written numerous scientific papers. After working at Microsoft as product manager, his interest in tech grew and he is now a full-time product manager at Microsoft"},
-    {name:'Dan Li', imageURL:"images/team/dan.svg",role:"Outreach Advisor",job:"LinkedIn: Associate Product Manager",program:"Computer Science 2015", email:"", LinkedIn:"", description:"Dan has done co-ops at top tech companies including Bloomberg, Pinterest, Twitter, and Microsoft. He was also accepted to Next36, prestige program for budding entrepenuers. He is going to work at LinkedIn as full-time product manager"},
-    {name:'Kartik Talwar', imageURL:"images/team/kartik.svg",role:"Advisor",program:"4A Physics", email:"", LinkedIn:"", description:""},
-    {name:'Kaivalya Gandhi', imageURL:"images/team/kaivalya.svg",role:"Co-President",program:"2B Software Engineering", email:"", LinkedIn:""},
+    {name:'Dan Li', imageURL:"images/team/dan.jpg",role:"Outreach Advisor",job:"LinkedIn: Associate Product Manager",program:"Computer Science 2015", email:"", LinkedIn:"", description:"Dan has done co-ops at top tech companies including Bloomberg, Pinterest, Twitter, and Microsoft. He was also accepted to Next36, prestige program for budding entrepenuers. He is going to work at LinkedIn as full-time product manager"},
+    {name:'Kartik Talwar', imageURL:"images/team/kartik.jpg",role:"Advisor",program:"4A Physics", email:"", LinkedIn:"", description:""},
+    {name:'Kaivalya Gandhi', imageURL:"images/team/kaivalya.jpg",role:"Co-President",program:"2B Software Engineering", email:"", LinkedIn:""},
     {name:'James Lindsay', imageURL:"images/team/james.png",role:"Co-President",program:"3B IT Management", email:"", LinkedIn:""},
-    {name:'Sammie Bae', imageURL:"images/team/sammie.svg",role:"Technology Co-Director",program:"1B System Design Engineering", email:"", LinkedIn:"", description:"Very excited about technology and seeing the club grow. The tech community at uWaterloo is amazing. "},
-    {name:'Reginald Suh', imageURL:"images/team/regi.svg",role:"Technology Co-Director",program:"1B Computer Science", email:"", LinkedIn:""},
-    {name:'Simran Jassal', imageURL:"images/team/simran.svg",role:"CO-DIRECTOR OF PRODUCT VISION CHALLENGE & TECH",program:"1B System Design Engineering", email:"", LinkedIn:""},
-    {name:'Mike Hennessey', imageURL:"images/team/mike.svg",role:"CONTENT & MARKETING CO-DIRECTOR",program:"3A Global Business & Digital Arts", email:"", LinkedIn:""},
-    {name:'Kaitlyn Yong', imageURL:"images/team/kaitlyn.svg",role:"CO-DIRECTOR OF THE INNOVATION TREK",program:"1B Computer Science", email:"", LinkedIn:""},
+    {name:'Sammie Bae', imageURL:"images/team/sammie.jpg",role:"Technology Co-Director",program:"1B System Design Engineering", email:"", LinkedIn:"", description:"Very excited about technology and seeing the club grow. The tech community at uWaterloo is amazing. "},
+    {name:'Reginald Suh', imageURL:"images/team/regi.jpg",role:"Technology Co-Director",program:"1B Computer Science", email:"", LinkedIn:""},
+    {name:'Simran Jassal', imageURL:"images/team/simran.jpg",role:"CO-DIRECTOR OF PRODUCT VISION CHALLENGE & TECH",program:"1B System Design Engineering", email:"", LinkedIn:""},
+    {name:'Mike Hennessey', imageURL:"images/team/mike.jpg",role:"CONTENT & MARKETING CO-DIRECTOR",program:"3A Global Business & Digital Arts", email:"", LinkedIn:""},
+    {name:'Kaitlyn Yong', imageURL:"images/team/kaitlyn.jpg",role:"CO-DIRECTOR OF THE INNOVATION TREK",program:"1B Computer Science", email:"", LinkedIn:""},
     // {name:'Shalin Upadhyay', imageURL:"images/team/regi.svg",role:"CO-DIRECTOR OF PRODUCT VISION CHALLENGE",program:"1B Computer Science", email:"", LinkedIn:""},
-    {name:'Meram Riad', imageURL:"images/team/meram.svg",role:"EXECUTIVE LEAD FOR THE PRODUCT VISION CHALLENGE",program:"2A Science and Business", email:"", LinkedIn:""},
+    {name:'Meram Riad', imageURL:"images/team/meram.jpg",role:"EXECUTIVE LEAD FOR THE PRODUCT VISION CHALLENGE",program:"2A Science and Business", email:"", LinkedIn:""},
     {name:'Jennifer Shen', imageURL:"images/team/jennifer.svg",role:"OUTREACH DIRECTOR",program:"2B Computer Science", email:"", LinkedIn:""},
     {name:'Pedja Ristic', imageURL:"images/team/pedja.svg",role:"MEDIA DIRECTOR",program:"Global Business & Digital Arts", email:"", LinkedIn:"", description:"A Ballroom dancing tech fiend with a fetish for programming and design. Pedja’s aim is to paint the walls of user interaction with the colour of quality."},
     {name:'Eric Chung', imageURL:"images/team/eric.png",role:"GRAPHICS & DESIGN DIRECTOR",program:"Global Business & Digital Arts", email:"", LinkedIn:"", description:"Passionate about design and creating a more user-friendly world. Looking forward to connecting with like-minded people and growing alongside this promising team."},
     {name: 'Akash Sant', imageURL:"images/team/akash.png",role:"Co-Director",program:"2B Software Engineering", email:"", LinkedIn:"", description:"Akash is excited to further develop his leadership and networking skills to empower students with exclusive opportunities to interact with management from top companies and through leaders across North America to nurture some of Waterloo's best future product managers and entrepreneurs."},
-    {name:'Jeron Chan', imageURL:"images/team/regi.svg",role:"",program:"2B Environment and Business", email:"", LinkedIn:""},
-    {name:'Ahilan Suriyakumaran', imageURL:"#",role:"Technology Co-Director", email:"", LinkedIn:"", description:"Keen interest in learning anything new, but even more interested in learning new technology. Excited about the growth of the club and being a part of a growing network and community in Waterloo."},
+    {name:'Jeron Chan', imageURL:"images/team/jeron.jpg",role:"Content & Marketing",program:"2B Environment and Business", email:"", LinkedIn:""},
+    // {name:'Ahilan Suriyakumaran', imageURL:"#",role:"Technology Co-Director", email:"", LinkedIn:"", description:"Keen interest in learning anything new, but even more interested in learning new technology. Excited about the growth of the club and being a part of a growing network and community in Waterloo."},
+    {name:'Umesh Khanna', imageURL:"images/team/umesh.jpg",role:"Director of Tech Talks",program:"1B Electrical Engineering", email:"", LinkedIn:"", description:""}
 
     ];
   }]);
