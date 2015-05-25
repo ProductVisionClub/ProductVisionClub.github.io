@@ -15,20 +15,36 @@ MEDIA QUERIES
 }
 
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-.parallax-bg, .home-parallax {
+@media only screen and (min-device-width : 300px) and (max-device-width : 1024px) and (orientation : landscape) {
+/*.parallax-bg, .home-parallax {
 	background-attachment: scroll;
 	background-position:top center !important;
 	background-size: cover;
+}*/
+#home{
+	background: url("../images/background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 }
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-.parallax-bg, .home-parallax {
+@media only screen and (min-device-width : 300px) and (max-device-width : 1024px) and (orientation : portrait) {
+/*.parallax-bg, .home-parallax {
 	background-attachment: scroll;
 	background-position:top center !important;
 	background-size: cover;
+}*/
+#home{
+	background: url("../images/background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 }
 
