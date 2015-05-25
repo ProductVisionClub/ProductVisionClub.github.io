@@ -1,11 +1,22 @@
 /* Landing Page */
 
 #home{
-	background: url("../images/background.svg");
+
+	width: 100%;
+	 background: url("../images/background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 #logo{
 	height: 200px;
+}
+
+#header-logo {
+	margin-top: -15px;
 }
 
 .home-logo-text a{
@@ -78,10 +89,16 @@
 	text-align: center;
 }
 
-
+.milestone-counter {
+	text-align: center;
+}
 /* companies */
 .companies {
 	text-align: center;
+}
+
+.client-logos.sponsors {
+	margin-bottom: 40px;
 }
 
 /* Contact parallax */
@@ -112,4 +129,14 @@ h1, h2, h3, h4, h5, h6{
 .pvcteam{
 	width: 400px;
 	height: 400px;
+}
+
+/* Portfolio */
+.portfolioImage {
+	width: 400px;
+	height: 400px;
+}
+
+.thumb-info {
+	margin-top: 15px;
 }

@@ -820,7 +820,7 @@ p.quote {
 
 
 /*======== HOME SECTION ========*/	
-#home {
+/*#home {
 	position: relative;
 	overflow: hidden;
 	height: 100%;
@@ -828,7 +828,7 @@ p.quote {
 	display: table;
 	color: #010101;
 	z-index:10;
-}
+}*/
 .home-gradient {
 	background-color: #FFD600;
 	background: -moz-radial-gradient(center center, circle cover, #FFD600 0%, #E2BE01 100%);
@@ -838,7 +838,7 @@ p.quote {
 	background: radial-gradient(center center, circle cover, #FFD600 0%, #E2BE01 100%);
 }
 .home-parallax {
-	background: url(../images/parallax/parallax4.jpg) fixed;
+	background: url("../images/background.png") fixed;
 	background-size: cover;
 	background-position: center top;
 	background-color: #FFD600;

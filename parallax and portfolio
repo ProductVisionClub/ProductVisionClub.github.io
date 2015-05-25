@@ -1,0 +1,126 @@
+   <!-- START PARALLAX SECTION -->
+  <div id="parallax3" class="parallax">
+        <div class="bg3 parallax-bg"></div><!-- END PARALLAX BACKGROUND -->
+        <div class="overlay"></div><!-- END PATTERN OVERLAY -->
+        <div class="container clearfix">
+                <div class="parallax-content">
+                <p class="testimonial-icon"><i class="icon-quote-left"></i></p><h3 class="title"><span>Our Testimonials</span></h3>
+                <div class="testimonial-slider">
+                      <div class="flexslider">
+                      <ul class="slides styled-list">
+
+                      <li class="testimonial-slide"><p class="client-testimonial">Nunc velit risus, dapibus non interdum quis, suscipit nec dolor. Vivamus tempor tempus mauris vitae fermentum. In vitae nulla lacus. Sed sagittis tortor vel arcu sollicitudin nec tincidunt metus suscipit.</p><div class="client-info">John Doe, ThemeForest</div></li>
+
+                      <li class="testimonial-slide"><p class="client-testimonial">Sed at felis neque, ut dapibus enim. Donec cursus risus at enim aliquam dapibus. Praesent a egestas elit. Integer bibendum purus vel nunc aliquam laoreet. In pellentesque turpis eget nisl volutpat ullamcorper. Morbi cursus velit et metus mattis ac aliquet enim tempor.</p><div class="client-info">Mike Smith, CodeCanyon</div></li>
+
+                      <li class="testimonial-slide"><p class="client-testimonial">Duis in nibh id lorem pulvinar adipiscing. Nulla odio elit, rutrum at convallis in, rhoncus ac urna. Curabitur justo urna, congue quis volutpat sed, fringilla sit amet dolor. Netus et malesuada fames ac turpis egestas.</p><div class="client-info">Sarah, GraphicRiver</div></li>
+
+                      </ul>
+                      </div>
+   				</div>
+      </div><!-- END PARALLAX CONTENT -->
+    </div><!-- END CONTAINER -->
+  </div>
+  <!-- END PARALLAX SECTION -->
+<!-- START PORTFOLIO SECTION -->
+  <div id="portfolio" class="page">
+
+    <div class="container">
+           <div class="row">
+      <div class="sixteen columns">
+              <!-- START TITLE -->
+        <div class="title">
+          <h1>Our Featured Portfolio</h1>
+                  <div class="subtitle">
+                      <p>Hire us if you like what we do because we helps Agencies to link <span class="highlight">Business</span> processes and <span class="highlight">People.</span></p>
+                  </div><!-- END SUBTITLE -->
+                </div><!-- END TITLE -->
+      </div><!-- END SIXTEEN COLUMNS -->
+           </div><!-- END ROW -->
+          </div><!-- END CONTAINER -->
+
+           <!-- START AJAX SECTION -->
+            <div id="ajax-section">
+             <div class="container clearfix">
+
+
+              <!-- START PROJECT NAVIGATION -->
+              <div id="project-navigation">
+                  <ul>
+                      <li id="nextProject"><a href="#"></a></li>
+                      <li id="prevProject"><a href="#" class="disabled"></a></li>
+                   </ul>
+               </div>
+               <!-- END PROJECT NAVIGATION -->
+
+               <!-- START PROJECT CLOSE BUTTON -->
+               <div id="closeProject">
+                    <a href="#loader"><i class="icon-remove"></i></a>
+
+               </div>
+               <!-- START PROJECT CLOSE BUTTON -->
+
+               <!-- START PROJECT LOADER SECTION -->
+               <div id="loader"></div>
+               <!-- END PROJECT CLOSE BUTTON -->
+
+               <!-- START AJAX CONTENT -->
+               <div id="ajax-content-outer">
+                    <div id="ajax-content-inner"></div>
+               </div>
+               <!-- END AJAX CONTENT -->
+
+        </div><!-- END CONTAINER -->
+
+    </div>
+           <!-- END AJAX SECTION -->
+
+         <div class="clear"></div>
+
+
+
+   <div class="container clearfix">
+
+   <!-- START PORTFOLIO FILTERING -->
+   <div  id="filters" class="sixteen columns">
+
+      <ul class="clearfix">
+        <li><a href="#" data-filter="*" class="active"><h3>All</h3></a></li>
+        <li><a href="#" data-filter=".branding"><h3>Branding</h3></a></li>
+        <li><a href="#" data-filter=".design"><h3>Design</h3></a></li>
+        <li><a href="#" data-filter=".photography"><h3>Photography</h3></a></li>
+        <li><a href="#" data-filter=".videography"><h3>Videography</h3></a></li>
+        <li><a href="#" data-filter=".web"><h3>Web</h3></a></li>
+      </ul>
+    </div><!-- END PORTFOLIO FILTERING -->
+   </div><!-- END CONTAINER -->
+
+
+   <!-- START PORTFOLIO WRAP -->
+   <div id="portfolio-wrap">
+
+    <!-- START PORTFOLIO ITEM -->
+    <div class="portfolio-item one-third column design videography photography web branding isotope-item current">
+      <div class="angularstuff" ng-controller="MemberCtrl">
+        <div ng-repeat="portfolio in portfolios">
+           <div class="portfolio">
+              <a href="#/projects/project-{{$index+1}}.html" class="portfolio-image">
+                <img class="portfolioImage" ng-src="{{portfolio.imageURL}}" alt="Portfolio {{$index+1}}"/><!-- END PORTFOLIO IMAGE -->
+
+                <div class="portfolio-overlay">
+                    <div class="thumb-info">
+                      <h3>{{portfolio.header}}</h3><!-- OVERLAY TITLE -->
+                      <p class="portfolio-tags">{{portfolio.subheader}}</p><!-- END PORTFOLIO TAGS -->
+                    </div>
+                </div><!-- END PORTFOLIO OVERLAY -->
+
+              </a>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- END PORTFOLIO ITEM -->
+    </div><!-- End portfolio Section -->
+
+
