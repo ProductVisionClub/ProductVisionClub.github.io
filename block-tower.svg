@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="321px" height="669px" viewBox="0 0 341 689" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>block-tower</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="V2" transform="translate(-550.000000, -335.000000)">
+            <g id="block-tower" transform="translate(550.000000, 335.000000)">
+                <polygon id="Path-3" fill="#FFFFFF" points="2.44011939 70.3538903 105.265459 0.355160261 337.907509 131.847905 252.53849 210.850735"></polygon>
+                <polygon id="Path-4" fill="#F8F8F8" points="254.346408 213.495654 340.859781 133.406933 339.484375 689 256.507812 689"></polygon>
+                <polygon id="Path-5" fill="#EFECEC" points="252.507812 689 0.269428302 689 0.721407816 73.0063904 252.051753 214.312765"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
