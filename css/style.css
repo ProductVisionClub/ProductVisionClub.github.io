@@ -119,9 +119,14 @@ img.block {
     color: white;
     letter-spacing: .2em;
     font-family: "Open Sans";
-    font-weight: 100;
+    font-weight: 300;
     line-height: 1.8em;
     opacity: 0.8;
+}
+
+.flex-end b{
+    font-weight: 900;
+    opacity: 1 !important;
 }
 
 .flex-start a {
@@ -207,24 +212,6 @@ img.block {
     
     
   }
-
-
-/*@media (max-width: 600px) {
-    
-    .block {
-        display: none;
-    }
-    
-    .flex-end{
-        
-        align-self: flex-start;
-    }
-    
-    .landing {
-        display: inline-flex;
-    }
-    
-}*/
 
 
 #nodrag{
