@@ -216,4 +216,5 @@ img.block {
 
 #nodrag{
     pointer-events: none;
+    width: 14%;
 }
