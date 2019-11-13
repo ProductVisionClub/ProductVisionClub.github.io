@@ -45,8 +45,8 @@
     font-family: Bebas Neue, sans-serif;
     font-weight: bold;
     line-height: 1.2;
-    font-size: 2rem;
-    letter-spacing: 0.4rem;
+    font-size: 31px;
+    letter-spacing: 5.5px;
 }
 
 .main {
@@ -56,4 +56,82 @@
 
 .pb-high {
     padding-bottom: 8rem !important;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.color-white {
+    color: white;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.big {
+    font-size: 6rem;
+}
+
+.bigger {
+    font-size: 9rem;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.thick {
+    font-weight: bold;
+}
+
+.lift-up {
+    margin-top: -50px;
+}
+
+.quote-text {
+    font-family: "Helvetica Neue", sans-serif;
+    font-stretch: normal;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.quotation-mark {
+    font-family: Times, serif;
+}
+
+.color-grey {
+    color: rgba(255, 255, 255, 0.24);
+}
+
+.push-down {
+    margin-top: 15px;
+}
+
+.mini {
+    font-size: 18px;
+}
+
+.nano {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.resize {
+    max-width: 600px;
+}
+
+.text-top {
+    margin-top: -40px;
+}
+
+.logoBrand {
+    font-family: Bebas Neue;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.lift-high {
+    margin-top: -70px;
 }
