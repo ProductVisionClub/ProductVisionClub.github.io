@@ -12,6 +12,10 @@
     overflow: hidden;
 }
 
+.white {
+    background: white;
+}
+
 .navbar-custom {
     border-width: 0;
     -webkit-box-shadow: 0 0;
@@ -50,7 +54,6 @@
 }
 
 .main {
-    height:100vh;
     width:100vw;
 }
 
@@ -134,4 +137,109 @@
 
 .lift-high {
     margin-top: -70px;
+}
+
+.grey {
+    color: #a6a6a6;
+}
+
+.title {
+    size: 80px;
+    letter-spacing: 7px;
+}
+
+.red-line {
+    width: 100%;
+    height: 2px;
+    border: solid 4px #f24949;
+}
+
+.white-line {
+    width: 100%;
+    height: 2px;
+    border: solid 4px #ffffff;
+}
+
+@media (min-width: 768px) {
+    .align-center {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .align-center {
+        padding-bottom: 0;
+    }
+}
+
+.about-text {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.dropcase {
+    font-size: 120px;
+    line-height: 140px;
+    letter-spacing: 1px;
+    color: #ff3d44;
+    font-weight: normal;
+}
+
+.call-to-action{
+    width: 274px;
+    height: 52px;
+    font-family: Bebas Neue;
+    font-size: 42px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 7px;
+    color: #ff3d44;
+}
+
+.color-red {
+    color: #ff3d44;
+    font-family: Bebas Neue, sans-serif;
+    font-size: 46px;
+}
+
+.profile {
+    max-width: 200px;
+    max-height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+}
+
+.name {
+    width: 126px;
+    height: 24px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.namespace {
+    padding-bottom: 24px;
+}
+
+.title {
+    width: 154px;
+    height: 38px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: #ffffff;
 }
