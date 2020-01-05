@@ -209,6 +209,9 @@
 
 .color-red {
     color: #ff3d44;
+}
+
+.font2-big {
     font-family: Bebas Neue, sans-serif;
     font-size: 46px;
 }
@@ -294,4 +297,50 @@
 
 .extra-letter-space {
     letter-spacing: 24px;
+}
+
+a:hover {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+
+.companies-text {
+    font-family: "Helvetica Neue", sans-serif;
+    font-stretch: normal;
+    letter-spacing: 4px;
+    font-size: 36px;
+}
+
+.companies-img {
+    width: 85px;
+    height: 85px;
+}
+
+.flourish-img {
+    width: auto;
+    max-height: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.flourish-img-flipped {
+    width: auto;
+    max-height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+@media (max-width: 710px) {
+    .space-divider {
+        margin-top: 350px;
+    }
+}
+
+@media (min-width: 710px) {
+    .space-divider {
+        margin-top: 50px;
+    }
 }
